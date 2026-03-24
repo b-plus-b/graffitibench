@@ -20,6 +20,7 @@ This allows the output to be effectively directly exportable into Lean.
 alias max_degree := maximum_degree
 alias min_degree := minimum_degree
 def order (_ : SimpleGraph V) := Fintype.card V
+abbrev nontrivial (_ : SimpleGraph V) : Prop := Nontrivial V
 noncomputable def size (G : SimpleGraph V) := G.edgeFinset.card
 def connected (G : SimpleGraph V) := G.Connected
 def bipartite (G : SimpleGraph V) := G.IsBipartite
